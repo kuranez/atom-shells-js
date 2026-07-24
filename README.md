@@ -34,9 +34,7 @@ npx http-server
 │     └── shells.js
 │ 
 ├── renderer/
-│     ├── n 
-│     ├── maxElectrons 
-│     └── electrons 
+│     └── renderer.js
 │ 
 └── main.js
 ```
