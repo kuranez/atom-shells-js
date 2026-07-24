@@ -48,29 +48,34 @@ Main
 │
 ├── Atom (Object)
 │     ├── atomicNumber
+│     ├── electronCount
 │     ├── shells[]
 │     ├── configuration[]
 │     └── totalEnergy
 │
 ├── Shell (Object)
 │     ├── n
-│     ├── electrons
 │     ├── maxElectrons
+│     ├── electrons
 │     └── energy
 │
 ├── atom.js
-│     ├── createAtom()
-│     ├── calculateConfiguration()
-│     └── createShells()
+│     ├── createAtom(atomicNumber)
+│     ├── calculateConfiguration(atom)
+│     └── createShells(atom)
+│
+├── shells.js
+│     ├── createShell(n)
+│     └── fillShells(atom)
 │
 ├── energy.js
-│     ├── calculateEnergy()
-│     └── calculateTotalEnergy()
+│     ├── calculateEnergy(shell)
+│     └── calculateTotalEnergy(atom)
 │
 └── renderer.js
-      ├── drawAtom()
-      ├── drawShells()
-      └── drawNucleus()
+      ├── drawAtom(atom)
+      ├── drawShells(shells)
+      └── drawNucleus(atom)
 ```
 
 ## Siehe auch
