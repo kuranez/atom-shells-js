@@ -25,20 +25,53 @@ npx http-server
 
 ## **Architektur**
 
+**Ordnerstruktur**
+
 ```yaml
 /
 │ 
-├── physics/
+├── physics/             //Physik
 │     ├── atom.js
 │     ├── energy.js
 │     └── shells.js
 │ 
-├── renderer/
+├── renderer/           //Renderer
 │     └── renderer.js
 │ 
-└── main.js
+└── main.js             //Hauptprogramm
 ```
-    
+
+**Klassendiagramm**
+
+```yaml
+Main
+│
+├── Atom (Object)
+│     ├── atomicNumber
+│     ├── shells[]
+│     ├── configuration[]
+│     └── totalEnergy
+│
+├── Shell (Object)
+│     ├── n
+│     ├── electrons
+│     ├── maxElectrons
+│     └── energy
+│
+├── atom.js
+│     ├── createAtom()
+│     ├── calculateConfiguration()
+│     └── createShells()
+│
+├── energy.js
+│     ├── calculateEnergy()
+│     └── calculateTotalEnergy()
+│
+└── renderer.js
+      ├── drawAtom()
+      ├── drawShells()
+      └── drawNucleus()
+```
 
 ## Siehe auch
 
