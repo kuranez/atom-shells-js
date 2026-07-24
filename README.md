@@ -23,6 +23,25 @@ npm install -g http-server
 npx http-server
 ```
 
+## **Architektur**
+
+```yaml
+/
+│ 
+├── physics/
+│     ├── atom.js
+│     ├── energy.js
+│     └── shells.js
+│ 
+├── renderer/
+│     ├── n 
+│     ├── maxElectrons 
+│     └── electrons 
+│ 
+└── main.js
+```
+    
+
 ## Siehe auch
 
 - [atom-shells-java](https://github.com/kuranez/atom-shells-java) - Einfaches Schalenmodell (Java)
